@@ -1,0 +1,560 @@
+.login-container {
+  min-height: 100vh;
+  background: #191919;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-header {
+  background: #fff;
+  width: 55%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 750px;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  width: clamp(250px, 100%, 500px);
+  gap: 10px;
+  padding: 4%;
+}
+
+.login-form h1 {
+  color: #fff;
+}
+
+.login-form form input,
+.login-form button {
+  width: auto;
+  padding: 8px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.login-form button {
+  margin-top: 5px;
+}
+
+form p {
+  font-size: 13px;
+  color: #413f3fce;
+  text-align: center;
+}
+
+form span {
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.google {
+  border-radius: 5px;
+  background: transparent;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+}
+
+form hr {
+  border-radius: 5px;
+  border: none; /* Remove the default border */
+  height: 3px; /* Set the height of the line */
+  background-color: #6d6d6d; /* Set the background color of the line */
+  margin: 20px 0;
+  width: 48%; /* Add some spacing above and below the line */
+}
+
+form .divider {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 2px;
+}
+
+.product-container {
+  position: relative;
+  min-height: 80vh;
+  background: #191919;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+  padding: 100px 2%;
+}
+
+.product-container .product-content {
+  position: relative;
+  min-height: 80vh;
+  max-width: 1300px;
+  margin: auto;
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+.product-container .product-content .mb-3 button {
+  color: #d3ad7f;
+}
+
+.product-content .tabs button {
+  padding: 10px 15px;
+  background: transparent;
+  border: none;
+  width: 50%;
+  border-radius: 10px 10px 0 0;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+}
+
+.product-content .tab {
+  min-height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.product-container .product-content .d-flex {
+  color: #fff;
+  padding: 10px;
+}
+
+.product-container .product-content .d-flex p {
+  font-size: 15px;
+  color: #ffffffbd;
+}
+
+.product-container .product-content .product-card .card-button {
+  color: #fff;
+  margin-left: 2px;
+}
+
+.product-detail-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #191919;
+  padding-top: 100px;
+}
+
+.product-detail-container .product-detail-content {
+  min-height: 80vh;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-detail-container .product-detail-content img {
+  object-fit: cover;
+  border-radius: 10px;
+  width: clamp(250px, 100%, 1000px);
+  max-height: 600px;
+}
+
+.img-container {
+  margin: auto;
+  width: 55%;
+}
+
+.product-detail-container .product-detail-content h1 {
+  margin: 0;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(20px, 3vw, 45px);
+}
+
+.product-details {
+  width: 35%;
+  height: 640px;
+
+}
+
+.product-details .rating {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product-details p {
+  color: white;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-height: 100px;
+  font-family: "Poppins", sans-serif;
+}
+
+.view-prod-left-btn {
+  padding: '2px 12px';
+  border-radius: '12px';
+  margin: '1px';
+  color: 'black';
+  background-color: 'white';
+}
+
+.view-prod-left-btn:hover {
+  background: #ffffff;
+  transition: 0.5s ease;
+}
+
+.product-details .price {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.product-details .cart {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  background: #6d6d6d;
+  text-transform: uppercase;
+}
+
+.cart-container {
+  min-height: 100vh;
+  width: 100%;
+  background: #191919;
+  padding: 100px 3%;
+}
+
+.cart-container .cart-content {
+  max-width: 1300px;
+  margin: auto;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cart-container .cart-content .cart-header h1 {
+  font-size: clamp(18px, 3vw, 30px);
+  font-family: "Poppins", sans-serif;
+}
+
+.cart-container .cart-content .cart-header p {
+  font-size: clamp(14px, 3vw, 17px);
+  font-family: "Poppins", sans-serif;
+}
+
+.cart-container .cart-content .cart-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bag {
+  background: #101011;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 4%;
+  border-radius: 10px;
+}
+
+.bag .bag-text h1 {
+  font-size: clamp(18px, 3vw, 25px);
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.bag .bag-text p {
+  font-size: clamp(14px, 3vw, 15px);
+  font-family: "Poppins", sans-serif;
+}
+
+.item-card {
+  min-width: 450px;
+  align-items: center;
+  padding: 12px;
+  background-color: #101011;
+  border-radius: 12px;
+}
+
+.item-card img {
+  border-radius: 5px;
+}
+
+.item-card .cart-info h1 {
+  font-size: clamp(18px, 3vw, 30px);
+  font-family: "Poppins", sans-serif;
+}
+
+.item-card .cart-info h4 {
+  font-size: clamp(15px, 3vw, 20px);
+  font-family: "Poppins", sans-serif;
+}
+
+.item-card .cart-info p,
+.item-card .cart-info h3 {
+  font-size: clamp(13px, 3vw, 18px);
+  font-family: "Poppins", sans-serif;
+  color: #ffffff94;
+}
+
+.checkout-section {
+  background-color: #101011;
+  padding: 12px;
+  border-radius: 12px;
+  width: clamp(300px, 100%, 400px);
+}
+
+.checkout-section .d-flex {
+  justify-content: space-between;
+}
+
+.checkout-section h1 {
+  font-size: clamp(18px, 3vw, 30px);
+  font-family: "Poppins", sans-serif;
+}
+
+.checkout-section .d-flex h3 {
+  font-size: clamp(14px, 3vw, 18px);
+  font-family: "Poppins", sans-serif;
+}
+
+.checkout-section .d-flex p {
+  font-size: clamp(14px, 3vw, 15px);
+  font-family: "Poppins", sans-serif;
+}
+
+.no-cart {
+  min-height: 80vh;
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.trash-icon {
+  color: #fff;
+  transition: 0.3s ease;
+  font-size: clamp(15px, 3vw, 25px);
+}
+
+.trash-icon:hover {
+  color: #f05b5b;
+}
+
+.no-cart h1 {
+  font-size: clamp(30px, 3vw, 70px);
+  letter-spacing: 3px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.checkout-section button {
+  width: 100%;
+  font-size: clamp(16px, 3vw, 20px);
+  letter-spacing: 3px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  background: #101011;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.about-container {
+  min-height: 20vh;
+  width: 100%;
+}
+
+.about-page-content {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.about-page-content .about-header {
+  text-align: center;
+  color: #fff;
+}
+
+.about-page-content .about-header h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+.about-page-content .about-header h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(40px, 5vw, 100px);
+}
+
+.about-page-content .about-header p {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(13px, 3vw, 16px);
+}
+
+.about-team {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-team .team-card {
+  max-height: 500px;
+  width: clamp(250px, 100%, 300px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  /* background-color: #191919; */
+  margin: 15px 0;
+}
+
+.about-team .team-card h4 {
+  margin-top: 10px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(15px, 3vw, 24px);
+  letter-spacing: 2px;
+  color: #d3ad7f;
+}
+
+.about-team .team-card h6 {
+  text-transform: capitalize;
+}
+
+.about-team .team-card p,
+.about-team .team-card h6 {
+  font-family: "Poppins", sans-serif;
+  color: #a1a1a1;
+}
+
+.card-body {
+  max-height: 350px;
+}
+.about-socials {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.about-team img {
+  height: 100%;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.modal-content {
+  background: #191919;
+  color: #fff;
+}
+
+.modal-body form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.modal-body form input {
+  padding: 8px 5px;
+}
+
+@media (max-width: 700px) {
+  .product-detail-container .product-detail-content img {
+    object-fit: contain;
+    border-radius: 10px;
+    width: clamp(250px, 100%, 1000px);
+    max-height: 280px;
+  }
+}
+
+@media (max-width: 720px) {
+  .login-form {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .product-detail-container {
+    padding: 100px 4%;
+  }
+
+  .img-container,
+  .product-details {
+    width: 100%;
+  }
+
+  .product-detail-container .product-detail-content {
+    justify-content: start;
+    align-items: center;
+  }
+  .product-content .product-tab {
+    justify-content: center;
+    overflow-y: scroll;
+  }
+
+  .login-header {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .cart-container .cart-content {
+    flex-direction: column;
+  }
+
+  .item-card img {
+    width: clamp(100px, 100%, 250px);
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  .checkout-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .item-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-content .tab {
+    max-height: 100vh;
+    overflow-y: scroll;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .checkout-section {
+    padding-top: 10px;
+  }
+
+  .cart-info {
+    width: clamp(250px, 100%, 400px);
+    margin: auto;
+  }
+}
